@@ -16,8 +16,8 @@ public class LapTimer extends WearableActivity {
     private ListView list;
     private boolean running;
     private long pauseOffset = 0;
-    ArrayList<String> arrayList = new ArrayList<>();
-    ArrayAdapter<String> adapter;
+    private ArrayList<String> arrayList = new ArrayList<>();
+    private ArrayAdapter<String> adapter;
 
     //TEMP
     int count = 0;

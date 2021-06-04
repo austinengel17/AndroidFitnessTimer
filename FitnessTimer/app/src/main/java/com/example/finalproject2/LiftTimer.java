@@ -9,15 +9,15 @@ import android.widget.TextView;
 
 public class LiftTimer extends WearableActivity {
 
-    TextView timerView;
-    TextView liftSetCounter;
-    Button start;
-    CountDownTimer timer;
-    long countdownTime = 0;
-    boolean timerRunning;
-    int currSetNum = 0;
-    long pauseMillSecsUntilFinish;
-    boolean paused = false;
+    private TextView timerView;
+    private TextView liftSetCounter;
+    private Button start;
+    private CountDownTimer timer;
+    private long countdownTime = 0;
+    private boolean timerRunning;
+    private int currSetNum = 0;
+    private long pauseMillSecsUntilFinish;
+    private boolean paused = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

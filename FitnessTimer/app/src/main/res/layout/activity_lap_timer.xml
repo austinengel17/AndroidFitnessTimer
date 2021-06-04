@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEC0C6"
+    android:backgroundTintMode="src_in"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".LapTimer"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D1D2D3"
+        android:padding="10dp"
+        app:boxedEdges="all">
+
+
+        <Chronometer
+            android:id="@+id/timeDisplay"
+            android:layout_width="173dp"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="28sp" />
+
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="58dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/timeDisplay"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#9AAEB1"
+            android:onClick="onClickStart"
+            android:text="Start"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="51dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/timeDisplay"
+            android:layout_toRightOf="@id/startButton"
+            android:backgroundTint="#9AAEB1"
+            android:onClick="onClickStop"
+            android:text="Stop"
+            android:textSize="10sp" />
+
+        <!--        appears when stop is clicked-->
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="61dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/timeDisplay"
+            android:layout_toRightOf="@id/stopButton"
+            android:backgroundTint="#9AAEB1"
+            android:onClick="onClickReset"
+            android:text="Reset"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/lapButton"
+            android:layout_width="45dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/resetButton"
+            android:onClick="onClickLap"
+            android:text="Lap"
+            android:textSize="10sp" />
+
+
+
+        <android.widget.ListView
+            android:id="@+id/list"
+            android:layout_width="122dp"
+            android:layout_height="81dp"
+            android:layout_below="@id/resetButton"
+            android:layout_toRightOf="@id/lapButton"/>
+    </RelativeLayout>
+</androidx.wear.widget.BoxInsetLayout>

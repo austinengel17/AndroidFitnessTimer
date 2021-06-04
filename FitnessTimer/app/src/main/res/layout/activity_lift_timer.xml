@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".LiftTimer"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:boxedEdges="all">
+
+        <TextView
+            android:id="@+id/timerView"
+            android:layout_width="177dp"
+            android:layout_height="30dp"
+            android:text="TextView"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/setCounter"
+            android:layout_width="177dp"
+            android:layout_height="30dp"
+            android:text="TextView"
+            android:gravity="center"
+            android:layout_below="@id/timerView"
+            />
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="58dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/setCounter"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#9AAEB1"
+            android:onClick="onClickStart"
+            android:text="Start"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/addTime"
+            android:layout_width="51dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/setCounter"
+            android:layout_toRightOf="@id/startButton"
+            android:backgroundTint="#9AAEB1"
+            android:onClick="onClickAddTime"
+            android:text="+30"
+            android:textSize="9sp" />
+        <Button
+            android:id="@+id/subtrTime"
+            android:layout_width="51dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/setCounter"
+            android:layout_toRightOf="@id/addTime"
+            android:backgroundTint="#9AAEB1"
+            android:onClick="onClickSubtractTime"
+            android:text="-30"
+            android:textSize="9sp" />
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="51dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/addTime"
+            android:backgroundTint="#9AAEB1"
+            android:onClick="onClickReset"
+            android:text="Reset"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/addSet"
+            android:layout_width="51dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/addTime"
+            android:layout_toRightOf="@id/resetButton"
+            android:backgroundTint="#9AAEB1"
+            android:onClick="onClickAddSet"
+            android:text="Set++"
+            android:textSize="9sp" />
+        <Button
+            android:id="@+id/resetSetCount"
+            android:layout_width="51dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/addTime"
+            android:layout_toRightOf="@id/addSet"
+            android:backgroundTint="#9AAEB1"
+            android:onClick="onClickResetSetCount"
+            android:text="Set 0"
+            android:textSize="9sp" />
+    </RelativeLayout>
+</androidx.wear.widget.BoxInsetLayout>

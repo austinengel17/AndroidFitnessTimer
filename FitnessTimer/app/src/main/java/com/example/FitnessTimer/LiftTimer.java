@@ -1,4 +1,4 @@
-package com.example.finalproject2;
+package com.example.FitnessTimer;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -29,7 +29,7 @@ public class LiftTimer extends WearableActivity {
 
         liftSetCounter = findViewById(R.id.setCounter);
         liftSetCounter.setText("Current Set #: " + currSetNum);
-
+        System.out.print(liftSetCounter.getText());
         start = findViewById(R.id.startButton);
         // Enables Always-on
         setAmbientEnabled();

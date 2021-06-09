@@ -1,4 +1,4 @@
-package com.example.finalproject2;
+package com.example.FitnessTimer;
 
 import android.os.Bundle;
 import android.os.SystemClock;

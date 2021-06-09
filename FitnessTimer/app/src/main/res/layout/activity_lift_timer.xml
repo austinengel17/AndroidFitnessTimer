@@ -22,17 +22,19 @@
             android:text="TextView"
             android:gravity="center"
             />
+
         <TextView
             android:id="@+id/setCounter"
             android:layout_width="177dp"
             android:layout_height="30dp"
-            android:text="TextView"
-            android:gravity="center"
             android:layout_below="@id/timerView"
-            />
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="TextView" />
+
         <Button
             android:id="@+id/startButton"
-            android:layout_width="58dp"
+            android:layout_width="55dp"
             android:layout_height="37dp"
             android:layout_below="@id/setCounter"
             android:layout_marginTop="0dp"
@@ -43,7 +45,7 @@
 
         <Button
             android:id="@+id/addTime"
-            android:layout_width="51dp"
+            android:layout_width="55dp"
             android:layout_height="37dp"
             android:layout_below="@id/setCounter"
             android:layout_toRightOf="@id/startButton"
@@ -51,9 +53,10 @@
             android:onClick="onClickAddTime"
             android:text="+30"
             android:textSize="9sp" />
+
         <Button
             android:id="@+id/subtrTime"
-            android:layout_width="51dp"
+            android:layout_width="55dp"
             android:layout_height="37dp"
             android:layout_below="@id/setCounter"
             android:layout_toRightOf="@id/addTime"
@@ -61,9 +64,10 @@
             android:onClick="onClickSubtractTime"
             android:text="-30"
             android:textSize="9sp" />
+
         <Button
             android:id="@+id/resetButton"
-            android:layout_width="51dp"
+            android:layout_width="55dp"
             android:layout_height="37dp"
             android:layout_below="@id/addTime"
             android:backgroundTint="#9AAEB1"
@@ -73,7 +77,7 @@
 
         <Button
             android:id="@+id/addSet"
-            android:layout_width="51dp"
+            android:layout_width="55dp"
             android:layout_height="37dp"
             android:layout_below="@id/addTime"
             android:layout_toRightOf="@id/resetButton"
@@ -81,9 +85,10 @@
             android:onClick="onClickAddSet"
             android:text="Set++"
             android:textSize="9sp" />
+
         <Button
             android:id="@+id/resetSetCount"
-            android:layout_width="51dp"
+            android:layout_width="55dp"
             android:layout_height="37dp"
             android:layout_below="@id/addTime"
             android:layout_toRightOf="@id/addSet"

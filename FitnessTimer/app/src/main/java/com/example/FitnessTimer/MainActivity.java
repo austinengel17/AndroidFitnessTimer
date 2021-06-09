@@ -1,4 +1,4 @@
-package com.example.finalproject2;
+package com.example.FitnessTimer;
 
 import android.content.Intent;
 import android.os.Bundle;
